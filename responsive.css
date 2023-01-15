@@ -76,6 +76,7 @@
     .email-us-left-right-parent{
         flex-direction: column-reverse;
         height: auto;
+        gap: 15px;
        }
    .email-us-left{
     text-align: center;
@@ -138,10 +139,6 @@
     }
     .sponsors-item-parent{
         grid-template-columns: 1fr;
-    }
-    .email-us-left-right-parent{
-        gap: 15px;
-        height: auto;
     }
     .email-us-left h6{
         font-size: 19px;
