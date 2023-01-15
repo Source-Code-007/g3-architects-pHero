@@ -1,0 +1,322 @@
+/* Google font import(work sans) */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+
+/* Common CSS */
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+ }
+ img{
+    max-width: 100%;
+ }
+ .cmn-clr-one{
+    color: #FF900E;
+ }
+ .cmn-clr-two{
+    color: #727272;
+ }
+ .cmn-btn-one{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FF900E;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: .5s;
+ }
+ .cmn-btn-one:hover{
+    color: #FF900E;
+    background-color: #fff;
+    border: 1px solid #FF900E;
+ }
+ .container{
+    max-width: 1250px;
+    margin: auto;
+ }
+
+
+ /* Let's start our custom CSS */
+ /* header */
+ header{
+    background: rgba(255, 144, 14, 0.1);
+ }
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+ }
+ .nav-left a{
+   text-decoration: none;
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+ }
+ .nav-right ul li{
+    display: inline-block;
+    list-style: none;
+ }
+ .nav-right ul li a{
+    text-decoration: none;
+    color: #424242;
+    padding: 10px 15px;
+    font-size: 18px;
+ }
+
+ .banner{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+ }
+ .banner-intro{
+    width: 65%;
+    margin: auto;
+ }
+ .banner-intro h3{
+    font-size: 64px;
+    font-weight: 700;
+    color: #131313;
+ }
+ .banner-intro p{
+    color: #727272;
+    padding-top: 15px;
+ }
+ .banner-btn{
+    padding-top: 32px;
+    padding-bottom: 50px;
+ }
+
+
+ /* Quick List section */
+ .features-section{
+    padding: 80px 0;
+ }
+ .quick-list-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 75px;
+    align-items: center;
+ }
+ .quick-list-left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+ }
+ .quick-list-right h3{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+ }
+ .quick-list-right h3 .cmn-clr-two{
+    font-weight: 500;
+ }
+ .quick-list-right p.cmn-clr-two{
+    margin-top: 24px;
+    margin-bottom: 32px;
+ }
+
+
+
+ .features-love-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 146px;
+    margin-top: 130px;
+    align-items: center;
+ }
+
+ .features-love-left>h3{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+    margin-bottom: 24px;
+ }
+ .features-love-left-item-parent{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+ }
+ .features-love-left-item{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+ }
+ .features-love-left-item>h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 10px;
+ }
+
+ .features-love-right{
+    position: relative;
+ }
+ .features-love-right img{
+    width: auto;
+    height: 790px;
+    object-fit: cover;
+    border-radius: 8px;
+ }
+ .features-love-right .features-love-btn{
+    position: absolute;
+    bottom: -35px;
+    left: -65px;
+    text-align: center;
+ }
+ .features-love-btn span:nth-child(1){
+    display: block;
+    font-weight: 700;
+    font-size: 65px;
+ }
+ .features-love-btn span:nth-child(2){
+    display: block;
+    font-weight: 500;
+    font-size: 25px;
+ }
+
+ /* Some facts section */
+ .some-facts-section{
+    padding: 50px 0;
+ }
+ .some-facts-intro{
+    width: 35%;
+    margin-bottom: 100px;
+ }
+ .some-facts-intro h3{
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+ }
+
+ .some-facts-item-parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 125px;
+ }
+ .some-facts-item{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px 15px;
+    transition: all .8s ease-in-out;
+ }
+ .some-facts-item:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: none;
+ }
+ .some-facts-item:hover img{
+    transform: scale(1.3);
+}
+.some-facts-item img{
+    width: 45px;
+    height: 45px;
+    transition: all .8s ease-in .3s;
+ }
+ .some-facts-item h3{
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+ }
+ .some-facts-item p{
+    color: #727272;
+    font-weight: 600;
+    font-size: 20px;
+ }
+
+ /* Sponsors section */
+ .sponsors-section{
+    padding: 80px 0;
+ }
+ .sponsors-intro{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+ }
+ .sponsors-intro h3{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+ }
+ .sponsors-item-parent{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+ }
+ .sponsors-item{
+     background-color: #fff;
+     text-align: center;
+}
+.sponsors-item img{
+    mix-blend-mode: luminosity;
+ }
+
+ /* email us section */
+ .email-us-section{
+    background: #FF900E url(./img/gray-pencils-yellow-background-upsplash.jpeg) no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+ }
+ .email-us-left-right-parent{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    padding: 50px 0;
+ }
+ .email-us-left, .email-us-right{
+    flex: 1 1 50%;
+ }
+ .email-us-left h3{
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 15px;
+ }
+ .email-us-left h6{
+    color: #727272;
+    font-size: 25px;
+ }
+ .email-us-right form{
+    display: flex;
+    justify-content: center;
+ }
+ .email-us-right form input[type="email"]{
+     border-radius: 8px 0 0 8px ;
+     padding: 10px 15px;
+     border: 2px solid #FF900E;
+     transition: .2s;
+     display: block;
+     width: 55%;
+    }
+    .email-us-right form input[type="email"]:focus{
+        outline: none;
+        border: 4px solid #FF900E;
+ }
+ .email-us-right form .cmn-btn-one{
+    border-radius: 0 8px 8px 0;
+ }
+
+
+ /* Footer */
+ footer{
+    text-align: center;
+    background-color: #FFF4E7;
+    padding: 40px 0;
+ }
+ footer p{
+    color: #424242;
+    font-size: 20px;
+ }
