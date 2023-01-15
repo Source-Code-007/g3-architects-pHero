@@ -75,6 +75,7 @@
     }
     .email-us-left-right-parent{
         flex-direction: column-reverse;
+        height: auto;
        }
    .email-us-left{
     text-align: center;
